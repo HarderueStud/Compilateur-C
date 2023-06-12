@@ -1,0 +1,15 @@
+Pour compiler un fichier C il faut taper les commandes suivantes dans un terminal depuis le
+répértoire Projet-Compilation-2023:
+
+yacc -d ANSYNyacc.y
+flex ANSI-C.l
+gcc Structure.h y.tab.c lex.yy.c -lfl
+./a.out < fichier_a_tester.C
+
+Si il y a des erreurs lexicales, synthaxiques ou sémantique: Il n'y aura pas de fichier Dot
+généré et l'erreur sera indiqué en retours.
+Si il n'y a pas d'erreurs, le fichier Dot FichierDotOut.pdf sera généré dans le répértoire
+courant qui contiendra l'arbre Dot du fichier.
+
+
+
